@@ -1,0 +1,19 @@
+*.class
+target
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+.classpath
+.project
+.settings
+
+.idea
+*.iml
+
+.*sw*
+
+pom.xml.releaseBackup
+release.properties
