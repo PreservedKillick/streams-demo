@@ -15,11 +15,6 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
         <maven.javadoc.skip>true</maven.javadoc.skip>
-
-        <commons-base.version>1.0.32</commons-base.version>
-        <commons-model.version>1.12</commons-model.version>
-
-        <jackson.version>2.7.0</jackson.version>
     </properties>
 
     <scm>
@@ -29,24 +24,6 @@
         <url>http://github.com/preservedkillick/streams-demo</url>
         <tag>HEAD</tag>
     </scm>
-
-    <repositories>
-        <repository>
-            <id>cloudy-aws</id>
-            <url>s3://cloudability-maven/release</url>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </repository>
-
-        <repository>
-            <id>cloudy-aws-snapshot</id>
-            <url>s3://cloudability-maven/snapshot</url>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </repository>
-    </repositories>
 
     <build>
         <plugins>
@@ -118,47 +95,10 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.cloudability</groupId>
-            <artifactId>commons-model</artifactId>
-            <version>${commons-model.version}</version>
-        </dependency>
-
-        <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.12</version>
             <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.threeten</groupId>
-            <artifactId>threeten-extra</artifactId>
-            <version>1.2</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.cloudability</groupId>
-            <artifactId>commons-service</artifactId>
-            <version>1.27</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.cloudability</groupId>
-            <artifactId>commons-base</artifactId>
-            <version>1.0.32</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.mockito</groupId>
-            <artifactId>mockito-core</artifactId>
-            <version>2.10.0</version>
-            <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>com.google.code.findbugs</groupId>
-            <artifactId>jsr305</artifactId>
-            <version>3.0.1</version>
         </dependency>
 
         <dependency>
@@ -166,11 +106,7 @@
             <artifactId>guava</artifactId>
             <version>23.0</version>
         </dependency>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.12</version>
-        </dependency>
+
     </dependencies>
 
 </project>
